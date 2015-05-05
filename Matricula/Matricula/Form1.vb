@@ -29,6 +29,30 @@
     End Sub
 
     Private Sub agregarClase_Click(sender As Object, e As EventArgs) Handles agregarClase.Click
-        Debug.WriteLine("Voy a añadir la clase")
+        If nombrePersona.Text = "" Or nombreClaseLab.Text = "" Or tipoClaseLab.SelectedIndex = -1 Then
+            Debug.WriteLine("no")
+        Else
+            listaClasesLabs.Items.Add(nombreClaseLab.Text)
+            totalCuenta = totalCuenta + precio
+            cuentaTotal.Text = totalCuenta
+        End If
+    End Sub
+
+
+    Private Sub numeroMensualidades_KeyPress(sender As Object, e As KeyPressEventArgs) Handles numeroMensualidades.KeyPress
+        Debug.WriteLine(numeroMensualidades.Text.Length)
+        e.Handled = Not (Char.IsDigit(e.KeyChar) And e.KeyChar < "7" And e.KeyChar > "0" Or Asc(e.KeyChar) = Keys.Back)
+
+    End Sub
+
+    Private Sub calcularPagoMensualidad_Click(sender As Object, e As EventArgs) Handles calcularPagoMensualidad.Click
+        If totalCuenta = 0 Or totalCuenta = Nothing Or numeroMensualidades.Text = "" Or listaClasesLabs.Items.Count = 0 Then
+            Debug.WriteLine("no")
+        Else
+            cantidadMensualidades = 1
+            cantidadMensualidades = CInt(numeroMensualidades.Text)
+            mensualidadPago = totalCuenta / cantidadMensualidades
+            pagoMensualidad.Text = mensualidadPago
+        End If
     End Sub
 End Class

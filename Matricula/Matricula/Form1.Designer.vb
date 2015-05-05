@@ -100,6 +100,7 @@ Partial Class Matricula
         '
         'precioClaseLab
         '
+        Me.precioClaseLab.Enabled = False
         Me.precioClaseLab.Location = New System.Drawing.Point(250, 82)
         Me.precioClaseLab.Name = "precioClaseLab"
         Me.precioClaseLab.Size = New System.Drawing.Size(100, 20)
@@ -167,6 +168,7 @@ Partial Class Matricula
         'numeroMensualidades
         '
         Me.numeroMensualidades.Location = New System.Drawing.Point(165, 316)
+        Me.numeroMensualidades.MaxLength = 1
         Me.numeroMensualidades.Name = "numeroMensualidades"
         Me.numeroMensualidades.Size = New System.Drawing.Size(64, 20)
         Me.numeroMensualidades.TabIndex = 14

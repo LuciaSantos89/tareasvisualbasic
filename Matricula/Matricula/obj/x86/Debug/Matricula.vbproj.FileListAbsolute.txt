@@ -7,3 +7,12 @@ C:\Users\Ana Lucia\Desktop\Progra4\Matricula\Matricula\obj\x86\Debug\Matricula.v
 C:\Users\Ana Lucia\Desktop\Progra4\Matricula\Matricula\obj\x86\Debug\Matricula.exe
 C:\Users\Ana Lucia\Desktop\Progra4\Matricula\Matricula\obj\x86\Debug\Matricula.xml
 C:\Users\Ana Lucia\Desktop\Progra4\Matricula\Matricula\obj\x86\Debug\Matricula.pdb
+C:\Users\asantos\Documents\tareasvisualbasic\Matricula\Matricula\obj\x86\Debug\Matricula.exe
+C:\Users\asantos\Documents\tareasvisualbasic\Matricula\Matricula\obj\x86\Debug\Matricula.xml
+C:\Users\asantos\Documents\tareasvisualbasic\Matricula\Matricula\obj\x86\Debug\Matricula.pdb
+C:\Users\asantos\Documents\tareasvisualbasic\Matricula\Matricula\bin\Debug\Matricula.exe
+C:\Users\asantos\Documents\tareasvisualbasic\Matricula\Matricula\bin\Debug\Matricula.pdb
+C:\Users\asantos\Documents\tareasvisualbasic\Matricula\Matricula\bin\Debug\Matricula.xml
+C:\Users\asantos\Documents\tareasvisualbasic\Matricula\Matricula\obj\x86\Debug\WindowsApplication1.Matricula.resources
+C:\Users\asantos\Documents\tareasvisualbasic\Matricula\Matricula\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Users\asantos\Documents\tareasvisualbasic\Matricula\Matricula\obj\x86\Debug\Matricula.vbproj.GenerateResource.Cache
