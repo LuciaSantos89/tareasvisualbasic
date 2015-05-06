@@ -142,6 +142,7 @@ Partial Class Matricula
         '
         'cuentaTotal
         '
+        Me.cuentaTotal.Enabled = False
         Me.cuentaTotal.Location = New System.Drawing.Point(265, 238)
         Me.cuentaTotal.Name = "cuentaTotal"
         Me.cuentaTotal.Size = New System.Drawing.Size(100, 20)
@@ -193,6 +194,7 @@ Partial Class Matricula
         '
         'pagoMensualidad
         '
+        Me.pagoMensualidad.Enabled = False
         Me.pagoMensualidad.Location = New System.Drawing.Point(210, 357)
         Me.pagoMensualidad.Name = "pagoMensualidad"
         Me.pagoMensualidad.Size = New System.Drawing.Size(100, 20)

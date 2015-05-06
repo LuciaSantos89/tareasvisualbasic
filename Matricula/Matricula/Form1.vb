@@ -52,7 +52,17 @@
             cantidadMensualidades = 1
             cantidadMensualidades = CInt(numeroMensualidades.Text)
             mensualidadPago = totalCuenta / cantidadMensualidades
-            pagoMensualidad.Text = mensualidadPago
+            pagoMensualidad.Text = FormatNumber(mensualidadPago, 2)
         End If
+    End Sub
+
+    Private Sub nuevaMatricula_Click(sender As Object, e As EventArgs) Handles nuevaMatricula.Click
+        nombrePersona.Text = ""
+        nombreClaseLab.Text = ""
+        tipoClaseLab.SelectedIndex = -1
+        precioClaseLab.Text = ""
+        listaClasesLabs.Items.Clear()
+        cuentaTotal.Text = ""
+        pagoMensualidad.Text = ""
     End Sub
 End Class
