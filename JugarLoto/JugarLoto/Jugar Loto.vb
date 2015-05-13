@@ -1,8 +1,8 @@
 ﻿Public Class JugarLoto
     Private premioSorteo As Double
     Private numerosSorteo(5) As Integer
-
-    Private tablaNumerosSorteo()() As Integer = New Integer()() {}
+    Private numerosGanadores(5) As Integer
+    Private ganadoresCuatroNum, ganadoresCincoNum, ganadoresSeisNum As Integer
 
     Private Sub jugarLoto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         premioSorteo = CDbl(InputBox("Ingrese el valor del premio"))
@@ -57,11 +57,53 @@
     End Sub
 
     Private Sub botonGenerarGanador_Click(sender As Object, e As EventArgs) Handles botonGenerarGanador.Click
+        Randomize()
+        For i As Integer = 0 To 5 Step 1
+            Dim numeroRandom As Integer = CInt(Int((33 * Rnd()) + 1))
+            If i = 0 Then
+                numerosGanadores(i) = numeroRandom
+            Else
+                For j As Integer = 0 To i - 1 Step 1
+                    If numeroRandom <> numerosGanadores(j) Then
+                        numerosGanadores(i) = numeroRandom
+                    Else
+                        i = i - 1
+                        Exit For
+                    End If
+                Next
+            End If
+        Next
+
+        inputNumeroGanador1.Text = numerosGanadores(0)
+        inputNumeroGanador2.Text = numerosGanadores(1)
+        inputNumeroGanador3.Text = numerosGanadores(2)
+        inputNumeroGanador4.Text = numerosGanadores(3)
+        inputNumeroGanador5.Text = numerosGanadores(4)
+        inputNumeroGanador6.Text = numerosGanadores(5)
+
+        Dim contador As Integer
+        contador = 0
+        Dim indiceNumerosGanadores As Integer
+
         For Each row As DataGridViewRow In tablaNumeros.Rows
+            indiceNumerosGanadores = 0
             For Each cell As DataGridViewTextBoxCell In row.Cells
-                'cell.
-                Debug.WriteLine(cell.Value)
+                If numerosGanadores(indiceNumerosGanadores) = cell.Value Then
+                    contador = contador + 1
+                End If
+                indiceNumerosGanadores = indiceNumerosGanadores + 1
             Next
+            If contador = 1 Then
+                ganadoresCuatroNum = ganadoresCuatroNum + 1
+            ElseIf contador = 2 Then
+                ganadoresCincoNum = ganadoresCincoNum + 1
+            ElseIf contador >= 3 Then
+                ganadoresSeisNum = ganadoresSeisNum + 1
+            End If
+            contador = 0
+            inputGanadoresCuatro.Text = ganadoresCuatroNum
+            inputGanadoresCinco.Text = ganadoresCincoNum
+            inputGanadoresSeis.Text = ganadoresSeisNum
         Next
     End Sub
 End Class
