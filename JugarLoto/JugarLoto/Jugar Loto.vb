@@ -34,7 +34,6 @@
             End If
         Next
         tablaNumeros.Rows.Add(CStr(numerosSorteo.GetValue(0)), CStr(numerosSorteo.GetValue(1)), CStr(numerosSorteo.GetValue(2)), CStr(numerosSorteo.GetValue(3)), CStr(numerosSorteo.GetValue(4)), CStr(numerosSorteo.GetValue(5)))
-        agregarATabla()
     End Sub
 
     Private Sub botonAgregarAleatorio_Click(sender As Object, e As EventArgs) Handles botonAgregarAleatorio.Click
@@ -55,21 +54,14 @@
             End If
         Next
         tablaNumeros.Rows.Add(CStr(numerosSorteo.GetValue(0)), CStr(numerosSorteo.GetValue(1)), CStr(numerosSorteo.GetValue(2)), CStr(numerosSorteo.GetValue(3)), CStr(numerosSorteo.GetValue(4)), CStr(numerosSorteo.GetValue(5)))
-        agregarATabla()
     End Sub
 
-    Private Sub agregarATabla()
-        Debug.WriteLine(tablaNumerosSorteo.GetLength(0))
-        If tablaNumerosSorteo.GetLength(0) = 0 Then
-            ReDim Preserve tablaNumerosSorteo(0)
-            tablaNumerosSorteo(0) = numerosSorteo
-        Else
-            ReDim Preserve tablaNumerosSorteo(tablaNumerosSorteo.GetLength(0))
-            tablaNumerosSorteo(tablaNumerosSorteo.GetLength(0) - 1) = numerosSorteo
-        End If
-        For Each number In tablaNumerosSorteo(0)
-            Debug.WriteLine(number)
+    Private Sub botonGenerarGanador_Click(sender As Object, e As EventArgs) Handles botonGenerarGanador.Click
+        For Each row As DataGridViewRow In tablaNumeros.Rows
+            For Each cell As DataGridViewTextBoxCell In row.Cells
+                'cell.
+                Debug.WriteLine(cell.Value)
+            Next
         Next
     End Sub
-
 End Class
