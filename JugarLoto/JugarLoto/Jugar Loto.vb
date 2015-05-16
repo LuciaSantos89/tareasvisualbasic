@@ -6,8 +6,7 @@
     Private premioCuatroNum, premioCincoNum, premioSeisNum As Double
 
     Private Sub jugarLoto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        premioSorteo = CDbl(InputBox("Ingrese el valor del premio"))
-        inputPremioSorteo.Text = premioSorteo
+        pedirPremio()
     End Sub
 
     Private Sub inputNumero_KeyPress(sender As Object, e As KeyPressEventArgs) Handles inputNumero6.KeyPress, inputNumero5.KeyPress, inputNumero4.KeyPress, inputNumero3.KeyPress, inputNumero2.KeyPress, inputNumero1.KeyPress
@@ -168,8 +167,7 @@
         inputPremioCinco.Clear()
         inputPremioSeis.Clear()
 
-        premioSorteo = CDbl(InputBox("Ingrese el valor del premio"))
-        inputPremioSorteo.Text = premioSorteo
+        pedirPremio()
 
         inputNumero1.Enabled = True
         inputNumero2.Enabled = True
@@ -181,4 +179,10 @@
         botonAgregarAleatorio.Enabled = True
         botonGenerarGanador.Enabled = True
     End Sub
+
+    Sub pedirPremio()
+        premioSorteo = CDbl(InputBox("Ingrese el valor del premio"))
+        inputPremioSorteo.Text = premioSorteo
+    End Sub
+
 End Class
