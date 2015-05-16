@@ -106,12 +106,15 @@
                     End If
                 Next
             Next
-            If contador = 4 Then
+            If contador = 1 Then
                 ganadoresCuatroNum = ganadoresCuatroNum + 1
-            ElseIf contador = 5 Then
+                row.DefaultCellStyle.BackColor = Color.Aqua
+            ElseIf contador = 2 Then
                 ganadoresCincoNum = ganadoresCincoNum + 1
-            ElseIf contador = 6 Then
+                row.DefaultCellStyle.BackColor = Color.BlueViolet
+            ElseIf contador = 3 Then
                 ganadoresSeisNum = ganadoresSeisNum + 1
+                row.DefaultCellStyle.BackColor = Color.DarkOrange
             End If
             contador = 0
             inputGanadoresCuatro.Text = ganadoresCuatroNum

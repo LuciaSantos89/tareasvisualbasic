@@ -92,7 +92,7 @@ Partial Class JugarLoto
         'inputPremioSorteo
         '
         Me.inputPremioSorteo.Enabled = False
-        Me.inputPremioSorteo.Location = New System.Drawing.Point(151, 16)
+        Me.inputPremioSorteo.Location = New System.Drawing.Point(185, 16)
         Me.inputPremioSorteo.Name = "inputPremioSorteo"
         Me.inputPremioSorteo.Size = New System.Drawing.Size(100, 20)
         Me.inputPremioSorteo.TabIndex = 1
@@ -100,7 +100,7 @@ Partial Class JugarLoto
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(53, 16)
+        Me.Label1.Location = New System.Drawing.Point(87, 16)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(73, 13)
         Me.Label1.TabIndex = 0
@@ -141,7 +141,7 @@ Partial Class JugarLoto
         '
         'inputNumero6
         '
-        Me.inputNumero6.Location = New System.Drawing.Point(283, 22)
+        Me.inputNumero6.Location = New System.Drawing.Point(295, 22)
         Me.inputNumero6.Maximum = New Decimal(New Integer() {33, 0, 0, 0})
         Me.inputNumero6.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.inputNumero6.Name = "inputNumero6"
@@ -151,7 +151,7 @@ Partial Class JugarLoto
         '
         'inputNumero5
         '
-        Me.inputNumero5.Location = New System.Drawing.Point(236, 22)
+        Me.inputNumero5.Location = New System.Drawing.Point(248, 22)
         Me.inputNumero5.Maximum = New Decimal(New Integer() {33, 0, 0, 0})
         Me.inputNumero5.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.inputNumero5.Name = "inputNumero5"
@@ -161,7 +161,7 @@ Partial Class JugarLoto
         '
         'inputNumero4
         '
-        Me.inputNumero4.Location = New System.Drawing.Point(189, 22)
+        Me.inputNumero4.Location = New System.Drawing.Point(201, 22)
         Me.inputNumero4.Maximum = New Decimal(New Integer() {33, 0, 0, 0})
         Me.inputNumero4.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.inputNumero4.Name = "inputNumero4"
@@ -171,7 +171,7 @@ Partial Class JugarLoto
         '
         'inputNumero3
         '
-        Me.inputNumero3.Location = New System.Drawing.Point(142, 22)
+        Me.inputNumero3.Location = New System.Drawing.Point(154, 22)
         Me.inputNumero3.Maximum = New Decimal(New Integer() {33, 0, 0, 0})
         Me.inputNumero3.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.inputNumero3.Name = "inputNumero3"
@@ -181,7 +181,7 @@ Partial Class JugarLoto
         '
         'inputNumero2
         '
-        Me.inputNumero2.Location = New System.Drawing.Point(95, 22)
+        Me.inputNumero2.Location = New System.Drawing.Point(107, 22)
         Me.inputNumero2.Maximum = New Decimal(New Integer() {33, 0, 0, 0})
         Me.inputNumero2.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.inputNumero2.Name = "inputNumero2"
@@ -191,7 +191,7 @@ Partial Class JugarLoto
         '
         'inputNumero1
         '
-        Me.inputNumero1.Location = New System.Drawing.Point(48, 22)
+        Me.inputNumero1.Location = New System.Drawing.Point(60, 22)
         Me.inputNumero1.Maximum = New Decimal(New Integer() {33, 0, 0, 0})
         Me.inputNumero1.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.inputNumero1.Name = "inputNumero1"
@@ -211,12 +211,13 @@ Partial Class JugarLoto
         '
         Me.tablaNumeros.AllowUserToAddRows = False
         Me.tablaNumeros.AllowUserToDeleteRows = False
+        Me.tablaNumeros.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
         Me.tablaNumeros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.tablaNumeros.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Uno, Me.Dos, Me.Tres, Me.Cuatro, Me.Cinco, Me.Seis})
-        Me.tablaNumeros.Location = New System.Drawing.Point(17, 13)
+        Me.tablaNumeros.Location = New System.Drawing.Point(32, 12)
         Me.tablaNumeros.Name = "tablaNumeros"
         Me.tablaNumeros.ReadOnly = True
-        Me.tablaNumeros.Size = New System.Drawing.Size(349, 150)
+        Me.tablaNumeros.Size = New System.Drawing.Size(343, 150)
         Me.tablaNumeros.TabIndex = 0
         '
         'Uno
