@@ -3,6 +3,7 @@
     Private numerosSorteo(5) As Integer
     Private numerosGanadores(5) As Integer
     Private ganadoresCuatroNum, ganadoresCincoNum, ganadoresSeisNum As Integer
+    Private premioCuatroNum, premioCincoNum, premioSeisNum As Double
 
     Private Sub jugarLoto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         premioSorteo = CDbl(InputBox("Ingrese el valor del premio"))
@@ -83,21 +84,21 @@
 
         Dim contador As Integer
         contador = 0
-        Dim indiceNumerosGanadores As Integer
 
         For Each row As DataGridViewRow In tablaNumeros.Rows
-            indiceNumerosGanadores = 0
-            For Each cell As DataGridViewTextBoxCell In row.Cells
-                If numerosGanadores(indiceNumerosGanadores) = cell.Value Then
-                    contador = contador + 1
-                End If
-                indiceNumerosGanadores = indiceNumerosGanadores + 1
+            For i As Integer = 0 To 5 Step 1
+                For Each cell As DataGridViewTextBoxCell In row.Cells
+
+                    If numerosGanadores(i) = cell.Value Then
+                        contador = contador + 1
+                    End If
+                Next
             Next
             If contador = 1 Then
                 ganadoresCuatroNum = ganadoresCuatroNum + 1
             ElseIf contador = 2 Then
                 ganadoresCincoNum = ganadoresCincoNum + 1
-            ElseIf contador >= 3 Then
+            ElseIf contador = 3 Then
                 ganadoresSeisNum = ganadoresSeisNum + 1
             End If
             contador = 0
@@ -105,5 +106,19 @@
             inputGanadoresCinco.Text = ganadoresCincoNum
             inputGanadoresSeis.Text = ganadoresSeisNum
         Next
+
+
+        If ganadoresCuatroNum <> 0 Then
+            premioCuatroNum = (premioSorteo * 0.15) / ganadoresCuatroNum
+            inputPremioCuatro.Text = premioCuatroNum
+        End If
+        If ganadoresCincoNum <> 0 Then
+            premioCincoNum = (premioSorteo * 0.25) / ganadoresCincoNum
+            inputPremioCinco.Text = premioCincoNum
+        End If
+        If ganadoresSeisNum <> 0 Then
+            premioSeisNum = premioSorteo
+            inputPremioSeis.Text = premioSeisNum
+        End If
     End Sub
 End Class
