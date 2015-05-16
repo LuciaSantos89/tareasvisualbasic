@@ -61,6 +61,7 @@
             Return
         End If
         inputNumero1.Enabled = False
+        
         inputNumero2.Enabled = False
         inputNumero3.Enabled = False
         inputNumero4.Enabled = False
@@ -106,15 +107,18 @@
                     End If
                 Next
             Next
-            If contador = 1 Then
+            If contador = 4 Then
                 ganadoresCuatroNum = ganadoresCuatroNum + 1
                 row.DefaultCellStyle.BackColor = Color.Aqua
-            ElseIf contador = 2 Then
+                inputGanadoresCuatro.BackColor = Color.Aqua
+            ElseIf contador = 5 Then
                 ganadoresCincoNum = ganadoresCincoNum + 1
-                row.DefaultCellStyle.BackColor = Color.BlueViolet
-            ElseIf contador = 3 Then
+                row.DefaultCellStyle.BackColor = Color.LawnGreen
+                inputGanadoresCinco.BackColor = Color.LawnGreen
+            ElseIf contador = 6 Then
                 ganadoresSeisNum = ganadoresSeisNum + 1
-                row.DefaultCellStyle.BackColor = Color.DarkOrange
+                row.DefaultCellStyle.BackColor = Color.OrangeRed
+                inputGanadoresSeis.BackColor = Color.OrangeRed
             End If
             contador = 0
             inputGanadoresCuatro.Text = ganadoresCuatroNum
@@ -187,5 +191,4 @@
         premioSorteo = CDbl(InputBox("Ingrese el valor del premio"))
         inputPremioSorteo.Text = premioSorteo
     End Sub
-
 End Class
