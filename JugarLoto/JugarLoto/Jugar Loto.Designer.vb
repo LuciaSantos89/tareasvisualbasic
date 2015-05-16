@@ -277,6 +277,7 @@ Partial Class JugarLoto
         '
         'inputNumeroGanador6
         '
+        Me.inputNumeroGanador6.Enabled = False
         Me.inputNumeroGanador6.Location = New System.Drawing.Point(279, 38)
         Me.inputNumeroGanador6.Name = "inputNumeroGanador6"
         Me.inputNumeroGanador6.Size = New System.Drawing.Size(37, 20)
@@ -284,6 +285,7 @@ Partial Class JugarLoto
         '
         'inputNumeroGanador5
         '
+        Me.inputNumeroGanador5.Enabled = False
         Me.inputNumeroGanador5.Location = New System.Drawing.Point(236, 38)
         Me.inputNumeroGanador5.Name = "inputNumeroGanador5"
         Me.inputNumeroGanador5.Size = New System.Drawing.Size(37, 20)
@@ -291,6 +293,7 @@ Partial Class JugarLoto
         '
         'inputNumeroGanador4
         '
+        Me.inputNumeroGanador4.Enabled = False
         Me.inputNumeroGanador4.Location = New System.Drawing.Point(195, 38)
         Me.inputNumeroGanador4.Name = "inputNumeroGanador4"
         Me.inputNumeroGanador4.Size = New System.Drawing.Size(37, 20)
@@ -298,6 +301,7 @@ Partial Class JugarLoto
         '
         'inputNumeroGanador3
         '
+        Me.inputNumeroGanador3.Enabled = False
         Me.inputNumeroGanador3.Location = New System.Drawing.Point(153, 38)
         Me.inputNumeroGanador3.Name = "inputNumeroGanador3"
         Me.inputNumeroGanador3.Size = New System.Drawing.Size(37, 20)
@@ -305,6 +309,7 @@ Partial Class JugarLoto
         '
         'inputNumeroGanador2
         '
+        Me.inputNumeroGanador2.Enabled = False
         Me.inputNumeroGanador2.Location = New System.Drawing.Point(110, 38)
         Me.inputNumeroGanador2.Name = "inputNumeroGanador2"
         Me.inputNumeroGanador2.Size = New System.Drawing.Size(37, 20)
@@ -312,6 +317,7 @@ Partial Class JugarLoto
         '
         'inputNumeroGanador1
         '
+        Me.inputNumeroGanador1.Enabled = False
         Me.inputNumeroGanador1.Location = New System.Drawing.Point(69, 38)
         Me.inputNumeroGanador1.Name = "inputNumeroGanador1"
         Me.inputNumeroGanador1.Size = New System.Drawing.Size(37, 20)

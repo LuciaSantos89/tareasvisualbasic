@@ -8,7 +8,6 @@
     Private Sub jugarLoto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         premioSorteo = CDbl(InputBox("Ingrese el valor del premio"))
         inputPremioSorteo.Text = premioSorteo
-
     End Sub
 
     Private Sub inputNumero_KeyPress(sender As Object, e As KeyPressEventArgs) Handles inputNumero6.KeyPress, inputNumero5.KeyPress, inputNumero4.KeyPress, inputNumero3.KeyPress, inputNumero2.KeyPress, inputNumero1.KeyPress
@@ -58,6 +57,20 @@
     End Sub
 
     Private Sub botonGenerarGanador_Click(sender As Object, e As EventArgs) Handles botonGenerarGanador.Click
+        If (tablaNumeros.Rows.Count = 0) Then
+            MsgBox("Debe generar boletos", MsgBoxStyle.Exclamation, "No hay boletos")
+            Return
+        End If
+        inputNumero1.Enabled = False
+        inputNumero2.Enabled = False
+        inputNumero3.Enabled = False
+        inputNumero4.Enabled = False
+        inputNumero5.Enabled = False
+        inputNumero6.Enabled = False
+        botonAgregarManual.Enabled = False
+        botonAgregarAleatorio.Enabled = False
+        botonGenerarGanador.Enabled = False
+
         Randomize()
         For i As Integer = 0 To 5 Step 1
             Dim numeroRandom As Integer = CInt(Int((33 * Rnd()) + 1))
@@ -94,11 +107,11 @@
                     End If
                 Next
             Next
-            If contador = 1 Then
+            If contador = 4 Then
                 ganadoresCuatroNum = ganadoresCuatroNum + 1
-            ElseIf contador = 2 Then
+            ElseIf contador = 5 Then
                 ganadoresCincoNum = ganadoresCincoNum + 1
-            ElseIf contador = 3 Then
+            ElseIf contador = 6 Then
                 ganadoresSeisNum = ganadoresSeisNum + 1
             End If
             contador = 0
@@ -107,18 +120,65 @@
             inputGanadoresSeis.Text = ganadoresSeisNum
         Next
 
-
+        premioCuatroNum = 0
+        premioCincoNum = 0
+        premioSeisNum = 0
         If ganadoresCuatroNum <> 0 Then
             premioCuatroNum = (premioSorteo * 0.15) / ganadoresCuatroNum
-            inputPremioCuatro.Text = premioCuatroNum
         End If
         If ganadoresCincoNum <> 0 Then
             premioCincoNum = (premioSorteo * 0.25) / ganadoresCincoNum
-            inputPremioCinco.Text = premioCincoNum
         End If
         If ganadoresSeisNum <> 0 Then
             premioSeisNum = premioSorteo
-            inputPremioSeis.Text = premioSeisNum
         End If
+        inputPremioCuatro.Text = premioCuatroNum
+        inputPremioCinco.Text = premioCincoNum
+        inputPremioSeis.Text = premioSeisNum
+    End Sub
+
+    Private Sub botonNuevoSorteo_Click(sender As Object, e As EventArgs) Handles botonNuevoSorteo.Click
+        premioSorteo = 0
+        Array.Clear(numerosSorteo, 0, 5)
+        Array.Clear(numerosGanadores, 0, 5)
+        ganadoresCuatroNum = 0
+        ganadoresCincoNum = 0
+        ganadoresSeisNum = 0
+        premioCuatroNum = 0
+        premioCincoNum = 0
+        premioSeisNum = 0
+        inputPremioSorteo.Clear()
+        inputNumero1.Value = inputNumero1.Minimum()
+        inputNumero2.Value = inputNumero2.Minimum()
+        inputNumero3.Value = inputNumero3.Minimum()
+        inputNumero4.Value = inputNumero4.Minimum()
+        inputNumero5.Value = inputNumero5.Minimum()
+        inputNumero6.Value = inputNumero6.Minimum()
+        tablaNumeros.Rows.Clear()
+        inputNumeroGanador1.Clear()
+        inputNumeroGanador2.Clear()
+        inputNumeroGanador3.Clear()
+        inputNumeroGanador4.Clear()
+        inputNumeroGanador5.Clear()
+        inputNumeroGanador6.Clear()
+        inputGanadoresCuatro.Clear()
+        inputGanadoresCinco.Clear()
+        inputGanadoresSeis.Clear()
+        inputPremioCuatro.Clear()
+        inputPremioCinco.Clear()
+        inputPremioSeis.Clear()
+
+        premioSorteo = CDbl(InputBox("Ingrese el valor del premio"))
+        inputPremioSorteo.Text = premioSorteo
+
+        inputNumero1.Enabled = True
+        inputNumero2.Enabled = True
+        inputNumero3.Enabled = True
+        inputNumero4.Enabled = True
+        inputNumero5.Enabled = True
+        inputNumero6.Enabled = True
+        botonAgregarManual.Enabled = True
+        botonAgregarAleatorio.Enabled = True
+        botonGenerarGanador.Enabled = True
     End Sub
 End Class
