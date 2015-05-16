@@ -84,25 +84,26 @@ Partial Class JugarLoto
         '
         Me.Panel1.Controls.Add(Me.inputPremioSorteo)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Location = New System.Drawing.Point(42, 12)
+        Me.Panel1.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Panel1.Location = New System.Drawing.Point(12, 12)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(393, 56)
+        Me.Panel1.Size = New System.Drawing.Size(513, 56)
         Me.Panel1.TabIndex = 0
         '
         'inputPremioSorteo
         '
         Me.inputPremioSorteo.Enabled = False
-        Me.inputPremioSorteo.Location = New System.Drawing.Point(185, 16)
+        Me.inputPremioSorteo.Location = New System.Drawing.Point(261, 16)
         Me.inputPremioSorteo.Name = "inputPremioSorteo"
-        Me.inputPremioSorteo.Size = New System.Drawing.Size(100, 20)
+        Me.inputPremioSorteo.Size = New System.Drawing.Size(100, 27)
         Me.inputPremioSorteo.TabIndex = 1
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(87, 16)
+        Me.Label1.Location = New System.Drawing.Point(132, 16)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(73, 13)
+        Me.Label1.Size = New System.Drawing.Size(116, 21)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Premio Sorteo"
         '
@@ -116,95 +117,97 @@ Partial Class JugarLoto
         Me.Panel2.Controls.Add(Me.inputNumero3)
         Me.Panel2.Controls.Add(Me.inputNumero2)
         Me.Panel2.Controls.Add(Me.inputNumero1)
-        Me.Panel2.Location = New System.Drawing.Point(42, 83)
+        Me.Panel2.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Panel2.Location = New System.Drawing.Point(12, 83)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(393, 105)
+        Me.Panel2.Size = New System.Drawing.Size(513, 105)
         Me.Panel2.TabIndex = 1
         '
         'botonAgregarAleatorio
         '
-        Me.botonAgregarAleatorio.Location = New System.Drawing.Point(216, 74)
+        Me.botonAgregarAleatorio.Location = New System.Drawing.Point(265, 61)
         Me.botonAgregarAleatorio.Name = "botonAgregarAleatorio"
-        Me.botonAgregarAleatorio.Size = New System.Drawing.Size(141, 23)
+        Me.botonAgregarAleatorio.Size = New System.Drawing.Size(156, 33)
         Me.botonAgregarAleatorio.TabIndex = 7
         Me.botonAgregarAleatorio.Text = "Agregar boleto aleatorio"
         Me.botonAgregarAleatorio.UseVisualStyleBackColor = True
         '
         'botonAgregarManual
         '
-        Me.botonAgregarManual.Location = New System.Drawing.Point(48, 74)
+        Me.botonAgregarManual.Location = New System.Drawing.Point(84, 61)
         Me.botonAgregarManual.Name = "botonAgregarManual"
-        Me.botonAgregarManual.Size = New System.Drawing.Size(145, 23)
+        Me.botonAgregarManual.Size = New System.Drawing.Size(173, 33)
         Me.botonAgregarManual.TabIndex = 6
         Me.botonAgregarManual.Text = "Agregar boleto manual"
         Me.botonAgregarManual.UseVisualStyleBackColor = True
         '
         'inputNumero6
         '
-        Me.inputNumero6.Location = New System.Drawing.Point(295, 22)
+        Me.inputNumero6.Location = New System.Drawing.Point(359, 19)
         Me.inputNumero6.Maximum = New Decimal(New Integer() {33, 0, 0, 0})
         Me.inputNumero6.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.inputNumero6.Name = "inputNumero6"
-        Me.inputNumero6.Size = New System.Drawing.Size(41, 20)
+        Me.inputNumero6.Size = New System.Drawing.Size(41, 27)
         Me.inputNumero6.TabIndex = 5
         Me.inputNumero6.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'inputNumero5
         '
-        Me.inputNumero5.Location = New System.Drawing.Point(248, 22)
+        Me.inputNumero5.Location = New System.Drawing.Point(312, 19)
         Me.inputNumero5.Maximum = New Decimal(New Integer() {33, 0, 0, 0})
         Me.inputNumero5.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.inputNumero5.Name = "inputNumero5"
-        Me.inputNumero5.Size = New System.Drawing.Size(41, 20)
+        Me.inputNumero5.Size = New System.Drawing.Size(41, 27)
         Me.inputNumero5.TabIndex = 4
         Me.inputNumero5.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'inputNumero4
         '
-        Me.inputNumero4.Location = New System.Drawing.Point(201, 22)
+        Me.inputNumero4.Location = New System.Drawing.Point(265, 19)
         Me.inputNumero4.Maximum = New Decimal(New Integer() {33, 0, 0, 0})
         Me.inputNumero4.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.inputNumero4.Name = "inputNumero4"
-        Me.inputNumero4.Size = New System.Drawing.Size(41, 20)
+        Me.inputNumero4.Size = New System.Drawing.Size(41, 27)
         Me.inputNumero4.TabIndex = 3
         Me.inputNumero4.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'inputNumero3
         '
-        Me.inputNumero3.Location = New System.Drawing.Point(154, 22)
+        Me.inputNumero3.Location = New System.Drawing.Point(218, 19)
         Me.inputNumero3.Maximum = New Decimal(New Integer() {33, 0, 0, 0})
         Me.inputNumero3.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.inputNumero3.Name = "inputNumero3"
-        Me.inputNumero3.Size = New System.Drawing.Size(41, 20)
+        Me.inputNumero3.Size = New System.Drawing.Size(41, 27)
         Me.inputNumero3.TabIndex = 2
         Me.inputNumero3.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'inputNumero2
         '
-        Me.inputNumero2.Location = New System.Drawing.Point(107, 22)
+        Me.inputNumero2.Location = New System.Drawing.Point(171, 19)
         Me.inputNumero2.Maximum = New Decimal(New Integer() {33, 0, 0, 0})
         Me.inputNumero2.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.inputNumero2.Name = "inputNumero2"
-        Me.inputNumero2.Size = New System.Drawing.Size(41, 20)
+        Me.inputNumero2.Size = New System.Drawing.Size(41, 27)
         Me.inputNumero2.TabIndex = 1
         Me.inputNumero2.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'inputNumero1
         '
-        Me.inputNumero1.Location = New System.Drawing.Point(60, 22)
+        Me.inputNumero1.Location = New System.Drawing.Point(124, 19)
         Me.inputNumero1.Maximum = New Decimal(New Integer() {33, 0, 0, 0})
         Me.inputNumero1.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.inputNumero1.Name = "inputNumero1"
-        Me.inputNumero1.Size = New System.Drawing.Size(41, 20)
+        Me.inputNumero1.Size = New System.Drawing.Size(41, 27)
         Me.inputNumero1.TabIndex = 0
         Me.inputNumero1.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'Panel3
         '
         Me.Panel3.Controls.Add(Me.tablaNumeros)
-        Me.Panel3.Location = New System.Drawing.Point(42, 194)
+        Me.Panel3.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Panel3.Location = New System.Drawing.Point(12, 194)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(392, 162)
+        Me.Panel3.Size = New System.Drawing.Size(513, 162)
         Me.Panel3.TabIndex = 2
         '
         'tablaNumeros
@@ -214,10 +217,10 @@ Partial Class JugarLoto
         Me.tablaNumeros.BackgroundColor = System.Drawing.SystemColors.ActiveBorder
         Me.tablaNumeros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.tablaNumeros.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Uno, Me.Dos, Me.Tres, Me.Cuatro, Me.Cinco, Me.Seis})
-        Me.tablaNumeros.Location = New System.Drawing.Point(32, 12)
+        Me.tablaNumeros.Location = New System.Drawing.Point(20, 12)
         Me.tablaNumeros.Name = "tablaNumeros"
         Me.tablaNumeros.ReadOnly = True
-        Me.tablaNumeros.Size = New System.Drawing.Size(343, 150)
+        Me.tablaNumeros.Size = New System.Drawing.Size(355, 150)
         Me.tablaNumeros.TabIndex = 0
         '
         'Uno
@@ -271,6 +274,7 @@ Partial Class JugarLoto
         Me.Panel4.Controls.Add(Me.inputNumeroGanador2)
         Me.Panel4.Controls.Add(Me.inputNumeroGanador1)
         Me.Panel4.Controls.Add(Me.botonGenerarGanador)
+        Me.Panel4.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel4.Location = New System.Drawing.Point(42, 362)
         Me.Panel4.Name = "Panel4"
         Me.Panel4.Size = New System.Drawing.Size(394, 75)
@@ -281,7 +285,7 @@ Partial Class JugarLoto
         Me.inputNumeroGanador6.Enabled = False
         Me.inputNumeroGanador6.Location = New System.Drawing.Point(279, 38)
         Me.inputNumeroGanador6.Name = "inputNumeroGanador6"
-        Me.inputNumeroGanador6.Size = New System.Drawing.Size(37, 20)
+        Me.inputNumeroGanador6.Size = New System.Drawing.Size(37, 27)
         Me.inputNumeroGanador6.TabIndex = 6
         '
         'inputNumeroGanador5
@@ -289,7 +293,7 @@ Partial Class JugarLoto
         Me.inputNumeroGanador5.Enabled = False
         Me.inputNumeroGanador5.Location = New System.Drawing.Point(236, 38)
         Me.inputNumeroGanador5.Name = "inputNumeroGanador5"
-        Me.inputNumeroGanador5.Size = New System.Drawing.Size(37, 20)
+        Me.inputNumeroGanador5.Size = New System.Drawing.Size(37, 27)
         Me.inputNumeroGanador5.TabIndex = 5
         '
         'inputNumeroGanador4
@@ -297,7 +301,7 @@ Partial Class JugarLoto
         Me.inputNumeroGanador4.Enabled = False
         Me.inputNumeroGanador4.Location = New System.Drawing.Point(195, 38)
         Me.inputNumeroGanador4.Name = "inputNumeroGanador4"
-        Me.inputNumeroGanador4.Size = New System.Drawing.Size(37, 20)
+        Me.inputNumeroGanador4.Size = New System.Drawing.Size(37, 27)
         Me.inputNumeroGanador4.TabIndex = 4
         '
         'inputNumeroGanador3
@@ -305,7 +309,7 @@ Partial Class JugarLoto
         Me.inputNumeroGanador3.Enabled = False
         Me.inputNumeroGanador3.Location = New System.Drawing.Point(153, 38)
         Me.inputNumeroGanador3.Name = "inputNumeroGanador3"
-        Me.inputNumeroGanador3.Size = New System.Drawing.Size(37, 20)
+        Me.inputNumeroGanador3.Size = New System.Drawing.Size(37, 27)
         Me.inputNumeroGanador3.TabIndex = 3
         '
         'inputNumeroGanador2
@@ -313,7 +317,7 @@ Partial Class JugarLoto
         Me.inputNumeroGanador2.Enabled = False
         Me.inputNumeroGanador2.Location = New System.Drawing.Point(110, 38)
         Me.inputNumeroGanador2.Name = "inputNumeroGanador2"
-        Me.inputNumeroGanador2.Size = New System.Drawing.Size(37, 20)
+        Me.inputNumeroGanador2.Size = New System.Drawing.Size(37, 27)
         Me.inputNumeroGanador2.TabIndex = 2
         '
         'inputNumeroGanador1
@@ -321,14 +325,14 @@ Partial Class JugarLoto
         Me.inputNumeroGanador1.Enabled = False
         Me.inputNumeroGanador1.Location = New System.Drawing.Point(69, 38)
         Me.inputNumeroGanador1.Name = "inputNumeroGanador1"
-        Me.inputNumeroGanador1.Size = New System.Drawing.Size(37, 20)
+        Me.inputNumeroGanador1.Size = New System.Drawing.Size(37, 27)
         Me.inputNumeroGanador1.TabIndex = 1
         '
         'botonGenerarGanador
         '
         Me.botonGenerarGanador.Location = New System.Drawing.Point(115, 3)
         Me.botonGenerarGanador.Name = "botonGenerarGanador"
-        Me.botonGenerarGanador.Size = New System.Drawing.Size(115, 23)
+        Me.botonGenerarGanador.Size = New System.Drawing.Size(136, 29)
         Me.botonGenerarGanador.TabIndex = 0
         Me.botonGenerarGanador.Text = "Generar boleto "
         Me.botonGenerarGanador.UseVisualStyleBackColor = True
@@ -347,66 +351,67 @@ Partial Class JugarLoto
         Me.Panel5.Controls.Add(Me.Label4)
         Me.Panel5.Controls.Add(Me.Label3)
         Me.Panel5.Controls.Add(Me.Label2)
-        Me.Panel5.Location = New System.Drawing.Point(41, 442)
+        Me.Panel5.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Panel5.Location = New System.Drawing.Point(12, 442)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(395, 126)
+        Me.Panel5.Size = New System.Drawing.Size(513, 126)
         Me.Panel5.TabIndex = 4
         '
         'inputPremioSeis
         '
         Me.inputPremioSeis.Enabled = False
-        Me.inputPremioSeis.Location = New System.Drawing.Point(310, 85)
+        Me.inputPremioSeis.Location = New System.Drawing.Point(402, 85)
         Me.inputPremioSeis.Name = "inputPremioSeis"
-        Me.inputPremioSeis.Size = New System.Drawing.Size(63, 20)
+        Me.inputPremioSeis.Size = New System.Drawing.Size(63, 27)
         Me.inputPremioSeis.TabIndex = 11
         '
         'inputPremioCinco
         '
         Me.inputPremioCinco.Enabled = False
-        Me.inputPremioCinco.Location = New System.Drawing.Point(310, 59)
+        Me.inputPremioCinco.Location = New System.Drawing.Point(402, 59)
         Me.inputPremioCinco.Name = "inputPremioCinco"
-        Me.inputPremioCinco.Size = New System.Drawing.Size(63, 20)
+        Me.inputPremioCinco.Size = New System.Drawing.Size(63, 27)
         Me.inputPremioCinco.TabIndex = 10
         '
         'inputPremioCuatro
         '
         Me.inputPremioCuatro.Enabled = False
-        Me.inputPremioCuatro.Location = New System.Drawing.Point(310, 29)
+        Me.inputPremioCuatro.Location = New System.Drawing.Point(404, 29)
         Me.inputPremioCuatro.Name = "inputPremioCuatro"
-        Me.inputPremioCuatro.Size = New System.Drawing.Size(63, 20)
+        Me.inputPremioCuatro.Size = New System.Drawing.Size(63, 27)
         Me.inputPremioCuatro.TabIndex = 9
         '
         'inputGanadoresSeis
         '
         Me.inputGanadoresSeis.Enabled = False
-        Me.inputGanadoresSeis.Location = New System.Drawing.Point(133, 82)
+        Me.inputGanadoresSeis.Location = New System.Drawing.Point(187, 81)
         Me.inputGanadoresSeis.Name = "inputGanadoresSeis"
-        Me.inputGanadoresSeis.Size = New System.Drawing.Size(63, 20)
+        Me.inputGanadoresSeis.Size = New System.Drawing.Size(63, 27)
         Me.inputGanadoresSeis.TabIndex = 8
         '
         'inputGanadoresCinco
         '
         Me.inputGanadoresCinco.Enabled = False
-        Me.inputGanadoresCinco.Location = New System.Drawing.Point(133, 56)
+        Me.inputGanadoresCinco.Location = New System.Drawing.Point(186, 56)
         Me.inputGanadoresCinco.Name = "inputGanadoresCinco"
-        Me.inputGanadoresCinco.Size = New System.Drawing.Size(63, 20)
+        Me.inputGanadoresCinco.Size = New System.Drawing.Size(63, 27)
         Me.inputGanadoresCinco.TabIndex = 7
         '
         'inputGanadoresCuatro
         '
         Me.inputGanadoresCuatro.Enabled = False
-        Me.inputGanadoresCuatro.Location = New System.Drawing.Point(133, 26)
+        Me.inputGanadoresCuatro.Location = New System.Drawing.Point(187, 26)
         Me.inputGanadoresCuatro.Name = "inputGanadoresCuatro"
-        Me.inputGanadoresCuatro.Size = New System.Drawing.Size(63, 20)
+        Me.inputGanadoresCuatro.Size = New System.Drawing.Size(63, 27)
         Me.inputGanadoresCuatro.TabIndex = 6
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Enabled = False
-        Me.Label7.Location = New System.Drawing.Point(217, 59)
+        Me.Label7.Location = New System.Drawing.Point(259, 59)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(87, 13)
+        Me.Label7.Size = New System.Drawing.Size(143, 21)
         Me.Label7.TabIndex = 5
         Me.Label7.Text = "Premio cada uno"
         '
@@ -414,9 +419,9 @@ Partial Class JugarLoto
         '
         Me.Label6.AutoSize = True
         Me.Label6.Enabled = False
-        Me.Label6.Location = New System.Drawing.Point(218, 87)
+        Me.Label6.Location = New System.Drawing.Point(260, 87)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(87, 13)
+        Me.Label6.Size = New System.Drawing.Size(143, 21)
         Me.Label6.TabIndex = 4
         Me.Label6.Text = "Premio cada uno"
         '
@@ -424,42 +429,43 @@ Partial Class JugarLoto
         '
         Me.Label5.AutoSize = True
         Me.Label5.Enabled = False
-        Me.Label5.Location = New System.Drawing.Point(217, 29)
+        Me.Label5.Location = New System.Drawing.Point(259, 29)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(87, 13)
+        Me.Label5.Size = New System.Drawing.Size(143, 21)
         Me.Label5.TabIndex = 3
         Me.Label5.Text = "Premio cada uno"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(17, 87)
+        Me.Label4.Location = New System.Drawing.Point(7, 87)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(111, 13)
+        Me.Label4.Size = New System.Drawing.Size(181, 21)
         Me.Label4.TabIndex = 2
         Me.Label4.Text = "Ganadores 6 números"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(16, 59)
+        Me.Label3.Location = New System.Drawing.Point(6, 59)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(111, 13)
+        Me.Label3.Size = New System.Drawing.Size(181, 21)
         Me.Label3.TabIndex = 1
         Me.Label3.Text = "Ganadores 5 números"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(16, 29)
+        Me.Label2.Location = New System.Drawing.Point(6, 29)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(111, 13)
+        Me.Label2.Size = New System.Drawing.Size(181, 21)
         Me.Label2.TabIndex = 0
         Me.Label2.Text = "Ganadores 4 números"
         '
         'Panel6
         '
         Me.Panel6.Controls.Add(Me.botonNuevoSorteo)
+        Me.Panel6.Font = New System.Drawing.Font("Century Gothic", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Panel6.Location = New System.Drawing.Point(40, 574)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(394, 57)
@@ -478,7 +484,7 @@ Partial Class JugarLoto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(485, 649)
+        Me.ClientSize = New System.Drawing.Size(537, 649)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel4)
